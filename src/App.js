@@ -1,8 +1,8 @@
 import React from 'react';
 import { withAuthenticator } from 'aws-amplify-react';
 
-import CreateNote from './modules/note/CreateNote';
+import Note from './modules/note';
 
-const App = () => <CreateNote />;
+const App = () => <Note />;
 
 export default withAuthenticator(App, { includeGreetings: true });
